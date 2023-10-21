@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Mens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="xmen.css">
+    <link rel="stylesheet" href="responsivo.css">
+
+</head>
+
+<body>
+    <div class="items">
+        <ul class="nav-items">
+            <li><a href="">Portifólio</a></li>
+            <li><a href="#" onclick="scrollToElement(document.getElementById('meuElemento'))">Contatos</a></li>
+            <li><a href="">Próximo</a></li>
+        </ul>
+    </div>
+    <header class="cabecalho">
+       
+        <img class="logo" src="image/logo.svg" alt="">
+        
+    </header>
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="titulo"> Seleciona um personagem</h1>
+            <ul class="lista-de-personagens">
+                <li class="personagem selecionado  " id="ciclope" data-name="Ciclope"
+                    data-description="Ele tem o poder de disparar rajadas ópticas por um acidente que aconteceu com ele quando criança, mas não consegue controlá-los.">
+                    <img src="image/card-ciclope.jpg" alt="">
+                </li>
+                <li class="personagem" id="jean-grey" data-name="Jean grey"
+                    data-description="Jean Grey é uma mutante nível ômega e o principal avatar da Força Fênix, no qual manifesta poderes cósmicos. A telepatia e telecinese.">
+                    <img src="image/card-jean-grey.jpg" alt="">
+                </li>
+                <li class="personagem" id="lince-negra" data-name="Lince Negra"
+                    data-description="Ela tem o poder de atravessar matéria sólida,campos de energia,rajadas ópticas, continuando intacta,e também tem o poder de andar no ar.">
+                    <img src="image/card-lince-negra.jpg" alt="">
+                </li>
+                <li class="personagem" id="Tempestade" data-name="Tempestade"
+                    data-description="Tem o poder de controlar as forças da natureza, muito poderosa ela pode produzir raios, chuvas, gelos, ventos, neblina, entre outros efeitos.">
+                    <img src="image/card-tempestade.jpg" alt="">
+                </li>
+                <li class="personagem" id="Vampira" data-name="Vampira"
+                    data-description="Ela tem o poder de absorver a vitalidade e memória das pessoas que toca ou no caso dos mutantes os poderes e a memória, mas só temporariamente.">
+                    <img src="image/card-vampira.jpg" alt="">
+                </li>
+                <li class="personagem" id="Wolverine" data-name="Wolverine"
+                    data-description="Poderes. Garras Metálicas. Fator de Cura Regenerativo, Super Agilidade.">
+                    <img src="image/card-wolverine.jpg" alt="">
+                </li>
+                <li class="personagem" id="Noturno" data-name="Noturno"
+                    data-description="Ele é um mutante que nasceu com cauda, orelhas pontudas e com o poder de se Teletransportar.">
+                    <img src="image/card-noturno.jpg" alt="">
+                </li>
+                <li class="personagem" id="Magneto" data-name="Magneto"
+                    data-description="Ele tem o poder de magnetocinese, ou seja, controlar objetos de metal e criar campos magnéticos.">
+                    <img src="image/card-magneto.jpg" alt="">
+                </li>
+            </ul>
+        </section>
+        <section class="personagem-selecionado">
+            <img class="personagem-grande" src="image/card-ciclope.png" alt="">
+            <div class="informacoes-personagem">
+                <h2 class="nome-personagem">Ciclope</h2>
+                <p class="descricao-personagem">Ele tem o poder de disparar rajadas ópticas por um acidente que
+                    aconteceu quando ele era criança, mas não consegue controlá-los.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="footer_img">
+            <img src="image/Blue_White_Modern_Shield_Football_Club_Logo__4_-removebg-preview.png" width="90px"
+                alt="">
+        </div>
+
+        <div class="footer_text">
+            <p>Coyright - Todos os direitos reservados</p>
+        </div>
+
+        <div class="footer_social" id="meuElemento" >
+            <a class="social-link" href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a class="social-link" href=""><i class="fa-brands fa-github"></i></a>
+            <a class="social-link" href="https://wa.me/5531994116462" target="_blank"><i
+                    class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+    <audio id="audio-ciclope" src="audios/Cyclope [vocals]_[cut_1sec].mp3"></audio>
+    <audio id="audio-jean-grey" src="audios/Jean-grey [vocals]_[cut_1sec].mp3"></audio>
+    <audio id="audio-lince-negra" src="audios/lince-negra [vocals]_[cut_1sec].mp3"></audio>
+    <audio id="audio-Tempestade" src="audios/Tempestade [vocals]_[cut_1sec].mp3"></audio>
+    <audio id="audio-Vampira" src="audios/Vampira [vocals]_[cut_1sec].mp3"></audio>
+    <audio id="audio-Wolverine" src="audios/Wolverine [vocals]_[cut_1sec].mp3"></audio>
+    <audio id="audio-Noturno" src="audios/Noturno [vocals]_[cut_1sec].mp3"></audio>
+    <audio id="audio-Magneto" src="audios/Meme-Samsung-estourado_[cut_1sec].mp3"></audio>
+    <audio>
+
+        <audio controls>
+            <source src="audios/Fundo.mp3" type="audio/mpeg">
+        </audio>
+        <script src="java/java.js"></script>
+
+
+</body>
+<script src="https://kit.fontawesome.com/ffaa8e6002.js" crossorigin="anonymous"></script>
+</html>

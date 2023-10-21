@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnold Tribute</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: dimgrey;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+            width: 100%;
+            height: 50px;
+            background-color: rgb(60, 60, 60);
+        }
+
+        .nav-items {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 70px;
+            list-style: none;
+            font-style: normal;
+
+        }
+
+        .nav-items li a {
+            color: white;
+            text-decoration-line: none;
+        }
+
+        .nav-img {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 15px;
+        }
+
+        .nav-img img {
+            width: 100px;
+        }
+
+        .container {
+            padding: 0 20px;
+            width: 70%;
+            margin: auto;
+            background-color: gray;
+        }
+
+        .fundo {
+            background-color: #2c2c2c;
+        }
+
+        .creator {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            color: azure;
+            border-bottom: 1px solid black;
+
+        }
+
+        .borda1 {
+            display: flex;
+            border: 1px solid black;
+            border-radius: 1%;
+            background-color: white;
+            padding: 2px;
+        }
+
+        .borda1 h3 {}
+
+        .imagem img {
+            width: 500px;
+
+
+
+
+        }
+
+        .corpo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+
+
+
+        }
+
+        .corpo h1 {
+            display: flex;
+            text-align: center;
+            margin-bottom: 15px;
+
+
+        }
+
+
+        .corpo .colunas h3 {
+
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .corpo h3 {
+            color: #2c2c2c;
+            text-align: center;
+
+        }
+
+        .bio p {
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .feitos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .feitos ul {
+            display: flex;
+
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .feitos h2 {
+            font-size: 20px;
+        }
+
+        .feitos li {
+            font-size: 16px;
+        }
+
+        .olympia {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+
+        .olympia p {
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .imagem_0 {
+            display: flex;
+            padding: 10px;
+            text-align: center;
+            word-wrap: normal;
+        }
+
+        .imagem_0 img {
+            width: 80px;
+
+        }
+
+        .treino img {
+            width: 100%;
+            border: 1px solid white;
+        }
+
+
+        .cinema {
+            margin: 20px 0 20px 0;
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cinema img {
+            border: 1px solid rgb(255, 254, 254);
+        }
+
+        .politica {
+            margin: 20px 0 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .politica img {
+            border: 1px solid rgb(255, 254, 254);
+        }
+
+        .governo {
+            gap: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 25px;
+
+        }
+
+        .governo img {
+            border: 1px solid rgb(255, 254, 254);
+        }
+
+        .vida_pessoal {
+            gap: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 25px;
+
+        }
+
+        .vida_pessoal img {
+            width: 300px;
+            height: px;
+            border: 1px solid rgb(255, 254, 254);
+        }
+
+        .vida1 {
+            height: 450px;
+        }
+
+        .netflix {
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+            
+        .gif {
+            display: flex;
+            align-items: center;
+        }
+
+        .saiba {
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #F4D22A;
+
+        }
+
+        .saiba img {
+            border-radius: 50%;
+            border: 1px solid white;
+            height: 370px;
+            margin-bottom: 10px;
+        }
+
+        .saiba h1 {
+            border-bottom: 2px solid black;
+        }
+
+        .video {
+            margin-bottom: 15px;
+
+        }
+
+        .saiba h3 {
+            color: black;
+        }
+
+
+
+        .footer_copy {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-top: 2px solid #000000;
+            color: #000000;
+            font-size: 12px;
+            padding-top: 5px;
+        }
+
+        .footer_text {
+            padding-left: 70px;
+        }
+
+
+        .footer_social {
+            display: flex;
+            position: relative;
+            float: left;
+            font-size: 30px;
+            gap: 25px;
+            margin-left: 50px;
+        }
+
+        .footer_social .social-link:hover {
+            /* Estilos para cada item individual durante o hover */
+            transform: scale(1.2);
+            transition: all 0.4s;
+        }
+
+        .footer_social a:nth-child(1) {
+            color: #0073B1;
+
+        }
+
+        .footer_social a:nth-child(2) {
+            color: black;
+        }
+
+        .footer_social a:nth-child(3) {
+            color: green;
+        }
+
+        .olif {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-bottom: 5px;
+
+
+        }
+
+        .oli1 img {}
+
+        oli1:hover img {
+            transform: scale(2);
+        }
+
+        .oli1 img {
+            border: 1px solid white;
+
+
+        }
+
+        .oli1 h3,
+        h4 {
+            text-align: center;
+
+        }
+
+        .oli2 h3,
+        h4 {
+            text-align: center;
+
+        }
+
+        .oli3 h3,
+        h4 {
+            text-align: center;
+
+        }
+
+        .oli4 h3,
+        h4 {
+            text-align: center;
+
+        }
+
+        .oli5 h3,
+        h4 {
+            text-align: center;
+
+        }
+
+        .oli6 h3,
+        h4 {
+            text-align: center;
+
+        }
+
+        .oli7 h3,
+        h4 {
+            text-align: center;
+
+        }
+
+
+
+        .oli2 img {
+            border: 1px solid white;
+        }
+
+        .oli3 img {
+            border: 1px solid white;
+
+        }
+
+        .oli4 img {
+            border: 1px solid white;
+            margin-right: 5px;
+        }
+
+        .oli5 img {
+            border: 1px solid white;
+        }
+
+        .oli6 img {
+            border: 1px solid white;
+
+        }
+
+        .feitos1 {
+            display: flex;
+            gap: 10px;
+            flex-direction: row;
+        }
+
+        .creator i {
+            color: yellow;
+            padding: 0 0 4px 5px;
+            font-size: 28px;
+
+        }
+
+        .title-olympia {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .title-olympia i {
+
+            font-size: 20px;
+        }
+
+        .borda2 {
+            display: flex;
+            border: 1px solid black;
+            border-radius: 1%;
+            background-color: white;
+            padding: 2px;
+        }
+
+        .borda3 {
+            display: flex;
+            border: 1px solid black;
+            border-radius: 1%;
+            background-color: white;
+            padding: 2px;
+        }
+
+        .borda4 {
+            display: flex;
+            border: 1px solid black;
+            border-radius: 1%;
+            background-color: white;
+            padding: 2px;
+        }
+
+        .borda5 {
+            display: flex;
+            border: 1px solid black;
+            border-radius: 1%;
+            background-color: white;
+            padding: 2px;
+        }
+
+        .borda6 {
+            display: flex;
+            border: 1px solid black;
+            border-radius: 1%;
+            background-color: white;
+            padding: 2px;
+        }
+
+        .borda7 {
+            display: flex;
+            border: 1px solid black;
+            border-radius: 1%;
+            background-color: white;
+            padding: 2px;
+        }
+
+
+        .borda2:hover {
+            transition-duration: 0.2s;
+            animation-delay: 0.5;
+            transform: translateX(5px) scale(1.2);
+            animation-delay: 0.5s;
+        }
+
+        .borda3:hover {
+            transition-duration: 0.2s;
+            animation-delay: 0.5;
+            transform: translateX(5px) scale(1.2);
+            animation-delay: 0.5s;
+        }
+
+        .borda4:hover {
+            transition-duration: 0.2s;
+            animation-delay: 0.5;
+            transform: translateX(5px) scale(1.2);
+            animation-delay: 0.5s;
+        }
+
+        .borda5:hover {
+            transition-duration: 0.2s;
+            animation-delay: 0.5;
+            transform: translateX(5px) scale(1.2);
+            animation-delay: 0.5s;
+        }
+
+        .borda6:hover {
+            transition-duration: 0.2s;
+            animation-delay: 0.5;
+            transform: translateX(5px) scale(1.2);
+            animation-delay: 0.5s;
+        }
+
+        .borda7:hover {
+            transition-duration: 0.2s;
+            animation-delay: 0.5;
+            transform: translateX(5px) scale(1.2);
+            animation-delay: 0.5s;
+        }
+
+        .cinema_img {
+            display: flex;
+
+        }
+
+        .cinema_img img:hover {
+            transform: scale(1.1);
+            transition: all 200ms;
+
+        }
+
+        .footer-img {
+            width: 150px;
+        }
+        .nav-items a:hover {
+            text-decoration: underline;
+            transition: all 0.3s  ;
+        }
+    </style>
+</head>
+
+<body class="fundo">
+    <div class="nav">
+        <div class="creator">
+            <h1>Tribute to Arnold </h1> <i class="fa-solid fa-crown"></i>
+        </div>
+
+        <ul class="nav-items">
+            <li><a href="">Portifólio</a></li>
+            <li><a href="#" onclick="scrollToElement(document.getElementById('meuElemento'))">Contatos</a></li>
+            <li><a href="">Próximo</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <div class="nav-img">
+            <img src="assets/imgbin-bodybuilding-weight-training-bodybuilding-UVRXFLuX1aq1jgpgRcEyE5ipX_t-removebg-preview.png"
+                alt="">
+        </div>
+        <div class="corpo">
+            <div class="colunas">
+                <h1>Arnold Schwarzenegger</h1>
+                <h3>Atleta, Empresário e Governador.</h3>
+            </div>
+            <div class="borda1">
+                <div class="imagem">
+
+                    <img src="assets/main-qimg-802451a70e35e72bebf11de2ff05aad0-pjlq.jpeg" alt="">
+                    <h3>Arnold treinando.. No Pain no Gain !!</h3>
+                </div>
+            </div>
+        </div> <br>
+
+        <div class="bio">
+            <p>Arnold Alois Schwarzenegger nasceu em Thal, Graz, Estíria, Áustria.[2] Seus pais eram: o polícia
+                inspector-chefe local Gustav Schwarzenegger (1907 – 1972), e sua esposa, Aurelia Jadrny (1922 –
+                1998).
+                Casaram-se em 20 de outubro de 1945 – Gustav tinha 38 anos, e Aurelia tinha 23; era viúva com um
+                filho
+                chamado Meinhard. De acordo com Schwarzenegger, ambos os pais eram muito rigorosos: "Naquela época,
+                na
+                Áustria, havia um mundo muito diferente; se fizéssemos alguma coisa ruim ou desobedecêssemos os
+                pais, a
+                punição não seria poupada".[12] Ele ia à Igreja todas as segundas.[13]</p>
+        </div>
+        <div class="title-olympia">
+            <h2>Títulos do Mister Olympia</h2> <i class="fa-solid fa-medal"></i>
+        </div>
+        <div class="olif">
+            <div class="borda2">
+                <div class="oli1">
+                    <h3>Nova York</h3>
+                    <img src="assets/olympia img/ee16a9c9f418fec35eeeb83d140d783f.jpg" width="200px" alt="">
+                    <h4>1970</h4>
+                </div>
+            </div>
+            <div class="borda3">
+                <div class="oli2">
+                    <h3>Paris, França</h3>
+                    <img src="assets/olympia img/mr-olympia-1971-3.webp" width="340px" alt="">
+                    <h4>1971</h4>
+                </div>
+            </div>
+            <div class="borda4">
+                <div class="oli3">
+                    <h3>Essen, Alemanha</h3>
+                    <img src="assets/olympia img/med_gallery_1_4_15384.webp" width="250px" alt="">
+                    <h4>1972</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="olif">
+            <div class="borda5">
+                <div class="oli4">
+                    <h3>Nova York</h3>
+                    <img src="assets/olis/57db771c4c7d219cb5a8ab39783f10bf--fitness--fitness-goals.jpg" width="200px"
+                        alt="">
+                    <h4>1973</h4>
+                </div>
+            </div>
+            <div class="borda6">
+                <div class="oli5">
+                    <h3>Pretória, África do Sul</h3>
+                    <img src="assets/olis/blog_427.jpg" width="350px" alt="">
+                    <h4>1975</h4>
+                </div>
+            </div>
+            <div class="borda7">
+                <div class="oli6">
+                    <h3>Sydney, Austrália</h3>
+                    <img src="assets/olis/c02790dd0c57fb46cc9766e3c6973a0d.jpg" width="200px" alt="">
+                    <h4>1980</h4>
+                </div>
+            </div>
+        </div>
+        <div class="treino">
+            <img src="assets/ad6547_5683a288e96545db822c6c312db9102d~mv2.webp" alt="">
+        </div>
+
+
+
+
+
+
+        <div class="olympia">
+            <p>Schwarzenegger é considerado uma das figuras mais importantes da história do fisiculturismo, e seu
+                legado
+                é
+                comemorado no concurso anual Arnold Classic. Arnold continuou a ser um rosto importante no
+                fisiculturismo
+                mesmo após sua aposentadoria, em parte devido a sua popularidade em academias e revistas de fitness.
+                Já
+                presidiu inúmeros concursos e premiações.Meses antes do torneio Mr. Olympia de 1975, os cineastas
+                George
+                Butler e Robert Fiore persuadiram Schwarzenegger a competir, com o intuito de filmar seu treinamento
+                para um
+                documentário de fisiculturismo chamado Pumping Iron. Schwarzenegger teve apenas três meses para
+                preparar-se
+                para a competição, após ter perdido um peso significativo para aparecer no filme Stay Hungry com
+                Jeff
+                Bridges.
+
+                Arnold saiu de sua aposentadoria, no entanto, para competir o Mr. Olympia de 1980.[2] Estava
+                treinando
+                para
+                seu papel em Conan the Barbarian, e ficou em boa forma por causa da corrida, passeios a cavalo e
+                treinamento
+                com espada, que resolveu que queria vencer o torneio Mr. Olympia pela última vez. Ele manteve este
+                plano
+                em
+                segredo, no caso de que um acidente de treino impedisse sua entrada e levasse-o a perder a fama.
+                Schwarzenegger, pouco antes da competição, teria dito: "Por que não competir?". Ele acabou vencendo
+                o
+                evento
+                com apenas sete semanas de preparação. Após ter sido declarado Mr. Olympia pela sétima vez,
+                Schwarzenegger
+                oficialmente se aposentou da carreira.</p>
+        </div>
+        <div class="cinema">
+            <h2>Arnold Nos Cinemas</h2>
+            <div class="cinema_img">
+                <img src="assets/movie/Arnold_Schwarzenegger_Movies.jpg" width="125px" alt="">
+                <img src="assets/movie/Arnold_Schwarzenegger_Movies1.jpg" width="125px" alt="">
+                <img src="assets/movie/Arnold_Schwarzenegger_Movies2.jpg" width="125px" alt="">
+                <img src="assets/movie/Arnold_Schwarzenegger_Movies3.jpg" width="125px" alt="">
+            </div>
+            <p>Schwarzenegger queria mudar-se do fisiculturismo para a atuação, finalmente o conseguindo quando foi
+                escolhido para atuar o papel de Hércules no filme Hercules in New York, 1970. Conhecido sob o nome
+                "Arnold
+                Strong", seu sotaque no filme foi tão carregado que sua voz foi dublada após a produção.[4] Sua
+                segunda
+                aparição cinematográfica foi um sicário surdo-mudo da máfia em The Long Goodbye (1973), do diretor
+                Robert
+                Altman, sendo seguido por uma parte muito mais significante no filme Stay Hungry (1976), pelo qual
+                Arnold
+                foi premiado com um Globo de Ouro na categoria Nova Estrela Masculina do Ano. Schwarzenegger
+                discutiu
+                suas
+                primeiras lutas no desenvolvimento de sua carreira artística: "Foi muito difícil para mim no começo
+                –
+                foi-me
+                dito por agentes que meu corpo era 'muito estranho', que eu tinha um sotaque engraçado, e que meu
+                nome
+                era
+                muito longo. Eles disseram que eu tinha que mudar isto. Basicamente, todo lugar que eu virava,
+                era-me
+                dito
+                que eu não tinha chance"</p>
+        </div>
+        <div class="politica">
+            <h2>Inicio na política</h2>
+            <img src="assets/07213111197324.jpg" width="500px" alt="">
+            <p>Schwarzenegger foi registrado como republicano por muitos anos. Como ator, suas visões políticas
+                foram
+                sempre
+                muito bem conhecidas como contrastavam com as visões de muitas outras estrelas proeminentes de
+                Hollywood,
+                que são, geralmente, consideradas uma comunidade liberal e inclinada aos democratas. Na Convenção
+                Nacional
+                Republicana de 2004, Schwarzenegger deu um discurso e explicou porque ele era republicano:[7]
+
+                “ Finalmente cheguei aqui em 1968. Que dia especial era! Lembro-me eu cheguei aqui com os bolsos
+                vazios,
+                mas
+                cheio de sonhos, cheio de determinação, cheio de desejos. A campanha presidencial estava em pleno
+                andamento.
+                Lembro-me assistindo a corrida presidencial Nixon-Humphrey na TV. Um amigo meu que falava alemão e
+                inglês
+                traduzia para mim. Eu ouvi Humphrey dizendo coisas que pareciam socialismo, algo que eu tinha
+                acabado de
+                sair.
+                Mas então eu ouvi Nixon falar. Ele estava falando sobre empresa livre, tirar o governo de suas
+                costas,
+                baixar os impostos e fortalecer as forças armadas. Ouvi Nixon falar soando mais como uma lufada de
+                ar
+                fresco. Eu disse para o meu amigo: "De que partido ele é?" Meu amigo disse: "Ele é Republicano." Eu
+                disse:
+                "Então eu sou Republicano." E eu tenho sido um Republicano desde então.
+
+                ”
+                Em 1985, Schwarzenegger apareceu em Stop the Madness, um vídeo musical antidrogas patrocinado pela
+                administração de Ronald Reagan. Ele noticiou a um grande público, pela primeira vez, que era
+                republicano
+                durante a eleição presidencial de 1988, acompanhando o então vice-presidente George H. W. Bush na
+                campanha.[42]</p>
+
+        </div>
+        <div class="governo">
+            <h2>Governador da Califórnia</h2> 
+            <img src="assets/csm_Covas_Arnold_Schwarzenegger_Doria_Folhapress_a0b45b9630.jpeg" width="500px" alt="">
+            <p>Schwarzenegger anunciou sua candidatura na eleição para governador da Califórnia de 2003 durante um
+                programa
+                de The Tonight Show with Jay Leno em 6 de agosto de 2003.[4] Como um candidato em uma eleição
+                recall,
+                Arnold
+                teve a maior reconhecimento de nome em um largo campo de candidatos, mas ele nunca havia ocupado um
+                cargo
+                público e suas visões políticas eram desconhecidas por muitos californianos. Sua candidatura
+                imediatamente
+                tornou-se notícia nacional e internacionalmente, com a mídia apelidando-o de "Governator"
+                (referindo-se
+                aos
+                filmes The Terminator) e "The Running Man" (o nome de outro de seus filmes), e chamando a eleição de
+                recall,
+                de "Total Recall" (ainda outro papel de Schwarzenegger). Arnold recusou participar de vários debates
+                com
+                outros candidatos, e apareceu em apenas um debate em 24 de Setembro de 2003.[45]
+
+                Em 7 de outubro de 2003, a eleição recall resultou em o governador Gray Davis sendo removido do
+                cargo
+                com
+                55,4% votando em "Sim", a favor da remoção. Schwarzenegger foi eleito Governador da Califórnia sob a
+                segunda
+                pergunta da cédula com 48,6% dos votos para o escolher como sucessor de Davis. Arnold derrotou o
+                democrata
+                Cruz Bustamante, o companheiro Republicano Tom McClintock, e outros. Seu rival mais próximo,
+                Bustamante,
+                recebeu 31% dos votos. No total, Schwarzenegger venceu a eleição com cerca de 1,3 milhões de votos.
+                Sob
+                as
+                regulamentações da Constituição da Califórnia, o segundo turno da eleição não deve ocorrer. Arnold
+                Schwarzenegger foi o primeiro governador da Califórnia que nasceu no exterior desde o governador
+                irlandês
+                John G. Downey em 1862.</p>
+        </div>
+        <div class="vida_pessoal">
+            <h2>Vida Pessoal</h2>
+            <div class="vida_img">
+                <img class="vida1" src="assets/ASchwarzenegger050915_01.jpg" alt="">
+                <img src="assets/345px-Arnoldandson.jpg" alt="">
+                <img src="assets/arnold-schwarzenegger-pedala3.webp" alt="">
+            </div>
+            <p>Em 1977, a autobiografia de Schwarzenegger, que fala sobre seu treinamento físico, intitulada Arnold: The
+                Education of a Bodybuilder foi publicada e tornou-se um enorme sucesso.[2] Após ter aulas de inglês em
+                Santa Monica College em Santa Mônica, Califórnia, ele ganhou um Bachelor of Arts por correspondência da
+                Universidade de Wisconsin-Superior, onde graduou-se em Negócios e Economia Internacional, em 1979.[2]
+
+                Em 26 de abril de 1986, Schwarzenegger casou-se com a jornalista televisiva Maria Shriver, sobrinha do
+                ex-presidente John F. Kennedy, em Hyannis, Massachusetts. O Rev. John Baptist Riordan realizou a
+                cerimônia na St. Francis Xavier Roman Catholic Church.[60] Juntos, Arnold e Maria tiveram quatro filhos:
+                Katherine Eunice Shriver Schwarzenegger (nascida em 13 de dezembro de 1989 (33 anos) em Los Angeles,
+                Califórnia);[61] Christina Maria Aurelia Schwarzenegger (nascida em 23 de julho de 1991 (31 anos) em Los
+                Angeles, Califórnia);[62] Patrick Arnold Schwarzenegger (nascido em 18 de setembro de 1993 (29 anos) em
+                Los Angeles, Califórnia);[63] e Christopher Sargent Shriver Schwarzenegger (nascido em 27 de setembro de
+                1997 (25 anos) em Los Angeles, Califórnia).[64] Schwarzenegger e sua família viviam numa casa de 11 mil
+                pés quadrados (1 022 m²) em Brentwood, LA, CA.[65][66] Eles também frequentavam uma casa nas Pacific
+                Palisades.[65][67] A família tem duas casas de férias em Sun Valley, Idaho e Hyannis Port,
+                Massachusetts.[68] Schwarzenegger não tem uma casa em Sacramento. No entanto, sempre que está na capital
+                californiana, Arnold reside em uma suíte do hotel Hyatt Regency. A suíte custa cerca de US$ 65 mil ao
+                ano.[69] Aos domingos, a família ia à missa na St. Monica's Catholic Church.[70]
+
+                Schwarzenegger disse acreditar que o segredo de um bom casamento é amor e respeito.[12] "Se você tem o
+                amor perfeito por sua esposa e ele tem o mesmo por você, acho que você tem um grande avanço... Não quer
+                dizer que não seja difícil algumas vezes. Você passa por seus altos e baixos, mas você trabalha com
+                ela".[12] Schwarzenegger conversou sobre sua paternidade em 2000: "Uma das melhores coisas que você pode
+                fazer com seus filhos é brincar com eles. Ao mesmo tempo, eu ajo feito bobo. Muitas vezes eu brinco de
+                muitos esportes com eles. Jogo jogos com eles. Atuo peças. Fazemos, algumas vezes, pequenas peças."[12]
+            </p>
+        </div>
+        <div class="netflix">
+            <div class="gif">
+                <h2>Documentário Netflix</h2>
+                <img src="assets/movie/netflix-unscreen.gif" width="50px" alt="">
+            </div>
+            <img src="assets/arnold_netflix_documentario__155w082h1.webp" height="450px" alt="">
+            <p>Em Arnold, série documental da Netflix dividida em três partes, é narrada a incrível jornada de Arnold
+                Schwarzenegger, desde sua cidade natal na Áustria até alcançar o topo do sonho americano.
+                Que Arnold Schwarzenegger é um dos nomes mais conhecidos da cultura pop dos últimos anos, isso é fato.
+                Sua história de vida, que pode ser considerada por alguns como algo trivial, é uma montanha-russa de
+                batalhas e conquistas que faz qualquer fã ficar surpreso pelo quanto o fisiculturista austríaco
+                conseguiu após se entregar de corpo e alma ao esporte, à arte e, em seguida, à política. A série
+                documental Arnold, dividida em 3 capítulos que contam exatamente cada etapa da vida do artista, ostenta
+                belos registros, além de coletar interessantes depoimentos sobre a modalidade esportiva que levou
+                Schwarzenegger ao estrelato, além de curiosidades sobre seus filmes de maior sucesso e sua investida no
+                governo estadunidense.
+                No primeiro episódio, denominado “Atleta”, é mostrado com detalhes, e até com a condução do próprio
+                Schwarzenegger (que dá as caras em diversas ocasiões no documentário como condutor da própria história),
+                a infância traumática do astro em Thal, na Áustria, onde sofreu por ter um pai extremista e pouco apoio
+                da família, até se deparar com filmes estrelados por atores fisiculturistas e ler revistas
+                norte-americanas sobre o assunto. Ao longo do segmento, a diretora Lesley Chilcott preza pelo dinamismo
+                e detalhes quanto a história do astro, sem fazer com que a projeção sofra nas mãos do didático e
+                repetitivo. Há um louvável equilíbrio entre apresentação de fatos, depoimentos descontraídos e até mesmo
+                representações dramáticas de acontecimentos na vida de Arnold, como o início do seu treino, sua
+                conquista de Mr. Universe em 1967, e sua ida para os Estados Unidos da América.</p>
+        </div>
+        <div class="saiba">
+            <h1>Quer saber mais?</h1>
+            <img src="assets/f5f5e11361da2f034b94246c7c6b6725.jpg" alt="">
+            <h3>Leia o livro que narra a hístoria de arnold schwarzenegger, dando todos os detalhes e suas experiências.</h3>
+            <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/bypKJHcLzwc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe> </div>
+        </div>
+        <div class="footer_copy">
+            <div class="footer_img">
+                <img src="assets/Blue_White_Modern_Shield_Football_Club_Logo__4_-removebg-preview.png" width="90px"
+                    alt="">
+            </div>
+
+            <div class="footer_text">
+                <p>Coyright - Todos os direitos reservados</p>
+            </div>
+
+            <div class="footer_social" id="meuElemento"  >
+                <a class="social-link" href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a class="social-link" href=""><i class="fa-brands fa-github"></i></a>
+                <a class="social-link" href="https://wa.me/5531994116462" target="_blank"><i
+                        class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="https://iconscout.com/lotties/netflix" target="_blank"></a><a
+        href="https://iconscout.com/contributors/priyanshu-17"></a><a
+        href="https://iconscout.com"></a>
+</body>
+<script src="https://kit.fontawesome.com/ffaa8e6002.js" crossorigin="anonymous"></script>
+<script src="assets/js.js" ></script>
+
+</html>
